@@ -1,58 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Rashikbhai</title>
-        <link rel="stylesheet" href="stail.css">
-    </head>
-    <body>
-        <div class="hero">
-        <div class="form-box">
-            <div class="button-box">
-                <div id="btn"></div>
-                <button type="button" class="btn-toggle" onclick="login()">Login</button>
-                <button type="button" class="btn-toggle" onclick="Register()">Register</button>
-            </div> 
-            <div class="social-icons">
-                
-                <p>Rojasara Rashikbhai</p>
-                
-            </div>
-            <form action="validation.php" id="login" class="input-group">
-                <input type="text" name="manager_n" class="input-field" placeholder="User Id" required>
-                <input type="password" name="manager_p" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="checkbox1"><span>Remamber Password</span>
-                <button type="submit" name="login" class="submit-btn">Login</button>
-            </form>
-            <form id="Register" class="input-group">
-                <input type="text" name="manager_nr" class="input-field" placeholder="User Id" required>
-                <input type="email" name="manager_er" class="input-field" placeholder="Email Id" required>
-                <input type="password" name="manager_cpr" class="input-field" placeholder="Create Password" required>
-                <input type="checkbox" class="checkbox1"><span>I agree to t&c</span>
-                <button type="submit" name="reg" class="submit-btn">Register</button>
-            </form>
+  <head>
+    <title>Rashikbhai</title>
+    <link rel="icon" type="image/x-icon" href="icon.png" />
+    <link rel="stylesheet" href="stail.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="btn-toggle" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="btn-toggle" onclick="Register()">
+            Register
+          </button>
         </div>
-        
+        <div class="social-icons">
+          <p>Rojasara Rashikbhai</p>
         </div>
-        <script>
-        var X = document.getElementById("login");
-        var Y = document.getElementById("Register");
-        
-        var Z = document.getElementById("btn");
+        <form action="validation.php" id="login" class="input-group">
+          <input
+            type="text"
+            name="manager_n"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="password"
+            name="manager_p"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="checkbox1" /><span
+            >Remamber Password</span
+          >
+          <button type="submit" name="login" class="submit-btn">Login</button>
+        </form>
+        <form id="Register" class="input-group">
+          <input
+            type="text"
+            name="manager_nr"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="email"
+            name="manager_er"
+            class="input-field"
+            placeholder="Email Id"
+            required
+          />
+          <input
+            type="password"
+            name="manager_cpr"
+            class="input-field"
+            placeholder="Create Password"
+            required
+          />
+          <input type="checkbox" class="checkbox1" /><span>I agree to t&c</span>
+          <button type="submit" name="reg" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      var X = document.getElementById("login");
+      var Y = document.getElementById("Register");
 
-        function Register(){
-            X.style.left = "-400px"
-            Y.style.left = "50px"
-            Z.style.left = "110px"
-        }
-        function login(){
-            X.style.left = "50px"
-            Y.style.left = "450px"
-            Z.style.left = "0"
-        }
+      var Z = document.getElementById("btn");
 
-
-        </script>
-        
-
-    </body>
+      function Register() {
+        X.style.left = "-400px";
+        Y.style.left = "50px";
+        Z.style.left = "110px";
+      }
+      function login() {
+        X.style.left = "50px";
+        Y.style.left = "450px";
+        Z.style.left = "0";
+      }
+    </script>
+  </body>
 </html>
